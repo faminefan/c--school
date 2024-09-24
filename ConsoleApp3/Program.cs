@@ -1,7 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-Console.WriteLine("andriy");
-string nickname = Console.ReadLine();
-Console.WriteLine($"Hello, {nickname}!");
-int c = int.Parse (Console.ReadLine());
-Console.WriteLine($"degrees fahrenheit are {c * 1.8 + 32}");
+Console.WriteLine("Enter your price: ");
+float a = float.Parse(Console.ReadLine());
+
+Console.WriteLine("Enter znushka : ");
+float b = float.Parse(Console.ReadLine());
+
+
+decimal price = (decimal) (a - b * (a / 100));
+Console.WriteLine($"Trip price: {price}uah");
